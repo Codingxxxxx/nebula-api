@@ -1,0 +1,9 @@
+{% extends 'templates/default.html' %}
+
+{% block main %}
+  <p>
+    Congratulation! your account <span class="bold">{{ $page.username }}</span> has been created. 
+    To finish the registration please click the following link to proceed verification.<br><br>
+    <a href="{{ $page.verificationUrl  }}">{{ $page.verificationUrl  }}</a>
+  </p>
+{% endblock %}

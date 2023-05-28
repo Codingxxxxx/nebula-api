@@ -1,0 +1,16 @@
+{% extends 'templates/default.html' %}
+
+{% block main %}
+  <p>
+    You have requested to reset password, click the following link to proceed.
+    <br>
+    <a href="{{ $page.resetLink }}">{{ $page.resetLink }}</a>
+    <br>
+    <div>
+      <span>Account Info</span><br>
+      <span>Username : {{ $page.username }}</span>
+    </div>
+    <br>
+    If this was a mistake, please ignore this.
+  </p>
+{% endblock %}

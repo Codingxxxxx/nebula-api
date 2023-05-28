@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@utils": ["src/utils"],
+      "@models": ["src/models"],
+      "@const": ["src/const"],
+      "@middleware": ["src/middleware"],
+      "@services": ["src/services"],
+      "@validation-schema": ["src/validation-schema"]
+    }
+  },
+  "include": ["src/**/*.js"],
+  "exclude": ["node_modules", "**/node_modules", "dist"]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      font-family: Tahoma, Verdana, Geneva, sans-serif;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: calc(14px * 2);
+    }
+
+    .bold {
+      font-weight: 600;
+    }
+
+    main {
+      background-color: whitesmoke;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="bold" style="margin-bottom: 1rem;">{{ $page.appName }}</h1>
+  <main style="padding: 8rem; max-width: 500px;">
+    {% block main %}
+    {% endblock %}
+  </main>
+</body>
+</html>
